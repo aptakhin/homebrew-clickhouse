@@ -8,6 +8,11 @@ class ClickhouseAT218AltinityStable < Formula
   head "https://github.com/Altinity/ClickHouse.git",
     branch:   "21.8"
 
+  livecheck do
+    url :stable
+    regex(/^v?(21\.8(?:\.\d+)+)-altinity(?:stable|lts)$/i)
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build

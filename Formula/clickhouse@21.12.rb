@@ -1,17 +1,17 @@
-class Clickhouse < Formula
+class ClickhouseAT2112 < Formula
   desc "Free analytics DBMS for big data with SQL interface"
   homepage "https://clickhouse.com"
   url "https://github.com/ClickHouse/ClickHouse.git",
-    tag:      "v21.11.6.7-stable",
-    revision: "534b23949e0ce94f645aa61a8e52f4dd24ef82d6"
+    tag:      "v21.12.1.9017-prestable",
+    revision: "4cc45c1e15912ee300bca7cc8b8da2b888a70e2a"
   license "Apache-2.0"
   head "https://github.com/ClickHouse/ClickHouse.git",
-    branch:   "master"
+    branch:   "21.12"
 
   bottle do
-    root_url "https://github.com/Altinity/homebrew-clickhouse/releases/download/clickhouse-21.11.6.7"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "a5bd6e48f5cdf8d5c750e160daa85f1fe5a08185691c6e744643acae419e5dc2"
-    sha256                               monterey:       "bc56994505aab7d5bb86f209d8b263e1dcc6dee4561659d024f93fe9319aa2ed"
+    root_url "https://github.com/Altinity/homebrew-clickhouse/releases/download/clickhouse@21.12-21.12.1.9017-pre"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "e2f9ead68568997378e635a0524ae904e5b3e204f7824d1301fdfb269d32ff5c"
+    sha256                               monterey:       "1cb7d38c2e1c56a5a2c6768fe9426240b037077679fa53d2cbced3f6fe350b3c"
   end
 
   depends_on "cmake" => :build

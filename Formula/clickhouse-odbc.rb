@@ -15,8 +15,9 @@ class ClickhouseOdbc < Formula
 
   bottle do
     root_url "https://github.com/Altinity/homebrew-clickhouse/releases/download/clickhouse-odbc-1.1.10.20210822"
-    rebuild 2
-    sha256 cellar: :any, big_sur: "13ddb78156b59c0a7692babdaf412baab50839a59ae71cd2bb3bfdec9ca83bc2"
+    rebuild 3
+    sha256 cellar: :any, arm64_monterey: "a71b162bef10da8af86b37b9bf2a9317a7bad52065867f890cbe0a10dca3e1e4"
+    sha256 cellar: :any, monterey:       "cfb1a25f373ae0ff66a3eb63c3fdd9b733b0972bd075d814e0d00cb0d31a616a"
   end
 
   option "with-static-runtime", "Link with the compiler and language runtime statically"

@@ -18,6 +18,10 @@ jobs:
           - os-type: macos
             os-gen: monterey
             os-arch: x64
+            
+          - os-type: macos
+            os-gen: macos-11
+            os-arch: x64
 
     steps:
       - name: Prepare workspace

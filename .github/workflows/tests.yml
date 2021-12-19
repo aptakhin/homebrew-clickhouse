@@ -10,15 +10,7 @@ jobs:
     timeout-minutes: 600
     strategy:
       matrix:
-        include:
-          - os-type: macos
-            os-gen: monterey
-            os-arch: arm64
-
-          - os-type: macos
-            os-gen: monterey
-            os-arch: x64
-            
+        include:           
           - os-type: macos
             os-gen: macos-11
             os-arch: x64
